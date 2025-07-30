@@ -12,6 +12,7 @@ class DeviceInfo(BaseModel):
 
 @app.get("/")
 def anasayfa():
+    print("Anasayfa endpointi çalıştı")  # ← Buraya ek print eklendi
     return {"mesaj": "API çalışıyor"}
 
 @app.post("/cihaz-bilgisi")
